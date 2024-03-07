@@ -96,7 +96,7 @@ address {
 
 /* Hero section */
 
-.main-container {
+.main-section {
   background: #2e2f42;
   padding: 188px 0;
 }
@@ -158,6 +158,9 @@ button {
   display: flex;
   gap: 24px;
 }
+.dignity-list-li {
+width: calc((100% - 72px) / 4);
+}
 .dignity-item {
   font-weight: 500;
   font-size: 20px;
@@ -165,7 +168,6 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  width: calc((100% - 72px) / 4);
 }
 
 .dignity-title-item {
@@ -240,6 +242,7 @@ button {
 .portfolio-border {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-item-li {
   margin: 0;
