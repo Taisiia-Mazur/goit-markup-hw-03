@@ -24,12 +24,15 @@ li {
 img {
   display: block;
 }
-.conteiner {
+.container {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.header-conteiner {
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,9 +96,9 @@ address {
 
 /* Hero section */
 
-.main-conteiner {
+.main-container {
   background: #2e2f42;
-  padding: 472px 188px;
+  padding: 188px 0;
 }
 .main-title {
   font-weight: 700;
@@ -113,8 +116,11 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  min-width: 169px;
+  height: 56px;
   color: #fff;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
   padding: 16px 32px;
   background: #4d5ae5;
@@ -132,7 +138,7 @@ button {
 
 /* Dignity */
 
-.dignity-conteiner {
+.dignity-section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -159,7 +165,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .dignity-title-item {
@@ -198,25 +204,29 @@ button {
   width: 264px;
   height: 380px;
   background: #fff;
-  text-align: center;
 }
 
+.card-container {
+  padding: 32px 0;
+}
 .team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin: 32px 0 8px 0;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .team-component {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Portfolio */
 
-.portfolio-conteiner {
+.portfolio-section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -224,16 +234,17 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-border {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-item-li {
   margin: 0;
-  border: 1px solid #e7e9fc;
   max-width: 360px;
   max-height: 420px;
-  box-sizing: border-box;
-  object-fit: contain;
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-list {
   font-weight: 500;
@@ -256,10 +267,11 @@ button {
 .footer-section {
   background: #2e2f42;
   display: flex;
+  padding: 100px 0;
 }
-.footer-conteiner {
-  padding-top: 100px;
-  padding-bottom: 100px;
+footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 footer .logo-accent {
   color: #f4f4fd;
@@ -269,5 +281,4 @@ footer .logo-accent {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-  padding-top: 16px;
 }
